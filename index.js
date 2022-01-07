@@ -1,4 +1,4 @@
-const express = require('Express');
+const express = require('express');
 require('./services/passportService');
 
 const app = express();
