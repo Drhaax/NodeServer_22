@@ -9,6 +9,7 @@ require('./services/passportService');
 mongoose.connect(keys.mongoURI);
 
 const app = express();
+const PORT = ;
 
 app.use(
 	cookieSession({
@@ -23,4 +24,4 @@ app.use(passport.session());
 
 require('./routes/authRoute')(app);
 
-app.listen(5000);
+app.listen(process.env.PORT || 5000);
