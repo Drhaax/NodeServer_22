@@ -14,7 +14,6 @@ passport.deserializeUser((id, done) => {
 		.then(usr => {
 			done(null, usr);
 		});
-	
 })
 
 passport.use(new GoogleStrategy(
