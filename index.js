@@ -9,7 +9,6 @@ require('./services/passportService');
 mongoose.connect(keys.mongoURI);
 
 const app = express();
-const PORT = ;
 
 app.use(
 	cookieSession({
